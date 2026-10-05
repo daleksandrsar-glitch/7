@@ -1,0 +1,5 @@
+# robots.txt for https://александр.pp.ua
+User-agent: *
+Allow: /
+
+Sitemap: https://александр.pp.ua/sitemap.xml

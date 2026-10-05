@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+    window.addEventListener('beforeunload', function() {
+      window.scrollTo(0, 0);
+    });
+    window.addEventListener('DOMContentLoaded', function() {
+      window.scrollTo(0, 0);
+    });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Александр Саркисян — Персональный манифест суверенного софта | александр.pp.ua</title>
+  <meta name="description" content="Александр Саркисян: основатель M.A.R.S. COMPANION LLC, автор 6 патентов UK IPO, выпускник КМКВК. Санкт-Петербург — Капан.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://александр.pp.ua">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%2307080e%22/%3E%3Cpath%20d%3D%22M16%203l3.5%209L29%2016l-9.5%204L16%2029l-3.5-9L3%2016l9.5-4L16%203z%22%20stroke%3D%22%23f43f5e%22%20stroke-width%3D%221.8%22%20fill%3D%22%23be123c%22%20fill-opacity%3D%220.4%22/%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%222.5%22%20fill%3D%22%23ffffff%22/%3E%3C/svg%3E">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <meta property="og:title" content="Александр Саркисян — Персональный манифест">
+  <meta property="og:description" content="Принципы суверенного локального софта. Александр Саркисян, M.A.R.S. COMPANION LLC, КМКВК.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://александр.pp.ua">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/42/%D0%A1%D0%B0%D1%80%D0%BA%D0%B8%D1%81%D1%8F%D0%BD_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87.jpg">
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/4/42/%D0%A1%D0%B0%D1%80%D0%BA%D0%B8%D1%81%D1%8F%D0%BD_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87.jpg">
+
+  <!-- Schema.org / Person JSON-LD (Search-Optimized by First Name / Last Name) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.wikidata.org/wiki/Q141447666",
+    "name": "Александр Саркисян",
+    "givenName": "Александр",
+    "familyName": "Саркисян",
+    "alternateName": [
+      "Саркисян Александр",
+      "Aleksandr Sarkisian",
+      "Sarkisian Aleksandr"
+    ],
+    "jobTitle": "Инженер и создатель автономных систем",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "M.A.R.S. COMPANION LLC",
+      "location": "Капан, Республика Армения"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Кронштадтский морской кадетский военный корпус (КМКВК)"
+    },
+    "homeLocation": [
+      { "@type": "City", "name": "Санкт-Петербург" },
+      { "@type": "City", "name": "Капан" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/%D0%A1%D0%B0%D1%80%D0%BA%D0%B8%D1%81%D1%8F%D0%BD_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87.jpg",
+    "sameAs": [
+      "https://sarkisian.site",
+      "https://www.wikidata.org/wiki/Q141447666",
+      "https://share.google/gPuOlx5vJrZOOmTbw"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #07080e;
+      --card: rgba(14, 16, 26, 0.78);
+      --card-border: rgba(244, 63, 94, 0.25);
+      --card-hover-border: rgba(244, 63, 94, 0.6);
+      --ruby: #f43f5e;
+      --ruby-dark: #be123c;
+      --ruby-glow: rgba(244, 63, 94, 0.22);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --subtle: #64748b;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.65;
+      padding: 56px 20px;
+      display: flex;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      position: relative;
+      background-image: 
+        radial-gradient(circle at 75% 10%, rgba(244, 63, 94, 0.26) 0%, transparent 650px),
+        radial-gradient(circle at 20% 70%, rgba(190, 18, 60, 0.2) 0%, transparent 550px),
+        radial-gradient(circle at 50% 110%, rgba(244, 63, 94, 0.12) 0%, transparent 600px),
+        linear-gradient(rgba(244, 63, 94, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244, 63, 94, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+    }
+
+    .wrap {
+      max-width: 720px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--ruby);
+      background: rgba(244, 63, 94, 0.1);
+      border: 1px solid rgba(244, 63, 94, 0.3);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      font-family: var(--mono);
+    }
+
+    .kicker::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--ruby);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--ruby);
+    }
+
+    h1 {
+      font-size: 44px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 40%, #fecdd3 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .lead {
+      font-size: 17.5px;
+      color: #e2e8f0;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(244, 63, 94, 0.4), transparent);
+      margin: 36px 0;
+    }
+
+    .thesis-block {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 16px 40px -10px rgba(0, 0, 0, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .thesis-block:hover {
+      border-color: var(--card-hover-border);
+      transform: translateY(-2px);
+      box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 20px 50px -10px rgba(0, 0, 0, 0.8),
+        0 0 30px rgba(244, 63, 94, 0.15);
+    }
+
+    .thesis-block h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .thesis-block h2::before {
+      content: "";
+      width: 4px;
+      height: 16px;
+      background: var(--ruby);
+      border-radius: 2px;
+      box-shadow: 0 0 10px var(--ruby);
+    }
+
+    .thesis-block p {
+      font-size: 14.5px;
+      color: #cbd5e1;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--ruby);
+      padding: 20px 24px;
+      margin: 32px 0;
+      font-size: 17px;
+      font-weight: 600;
+      color: #ffffff;
+      background: rgba(244, 63, 94, 0.08);
+      border-radius: 0 12px 12px 0;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      line-height: 1.6;
+    }
+
+    .profile-card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 40px;
+      backdrop-filter: blur(16px);
+      font-family: var(--mono);
+      font-size: 12.5px;
+    }
+
+    .profile-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .profile-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+
+    /* Natural text links */
+    .text-link {
+      color: var(--ruby);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s, opacity 0.2s;
+    }
+
+    .text-link:hover {
+      color: #fda4af;
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 50px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 24px;
+      font-size: 12px;
+      color: #64748b;
+      text-align: center;
+      font-family: var(--mono);
+    }
+  
+    /* --- Unique Archetype 7: Architectural Thesis Unfold --- */
+    @keyframes architecturalUnfold {
+      0% {
+        opacity: 0;
+        transform: scale(0.96);
+        filter: blur(12px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+      }
+    }
+
+    @keyframes thesisBlockStagger {
+      0% {
+        opacity: 0;
+        transform: translateY(18px);
+        border-color: rgba(220, 38, 38, 0.4);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+        border-color: var(--border);
+      }
+    }
+
+    .wrap {
+      animation: architecturalUnfold 0.8s cubic-bezier(0.2, 0.9, 0.2, 1) both;
+    }
+
+    .kicker {
+      animation: architecturalUnfold 0.5s ease-out 0.08s both;
+    }
+
+    h1 {
+      animation: architecturalUnfold 0.6s ease-out 0.14s both;
+    }
+
+    .lead {
+      animation: architecturalUnfold 0.65s ease-out 0.20s both;
+    }
+
+    .thesis-block {
+      animation: thesisBlockStagger 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
+    }
+
+    .profile-card {
+      animation: thesisBlockStagger 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
+    }
+
+    footer {
+      animation: architecturalUnfold 0.65s ease-out 0.48s both;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, .wrap, .kicker, h1, .lead, .thesis-block, .profile-card, footer {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="kicker">ПЕРСОНАЛЬНЫЙ МАНИФЕСТ &bull; СУВЕРЕННЫЙ ИИ</div>
+  <h1>Александр Саркисян</h1>
+  <p class="lead">
+    Основатель M.A.R.S. COMPANION LLC, системный архитектор, автор 6 патентных заявок UK IPO, выпускник КМКВК.
+  </p>
+
+  <hr>
+
+  <div class="thesis-block">
+    <h2>1. Суверенность данных</h2>
+    <p>
+      Технологии искусственного интеллекта не должны требовать от человека отказа от личных границ. Все процессы обработки речи и формирование семантической памяти в M.A.R.S. Companion ведутся локально на самом устройстве, без передачи информации на сторонние сервера.
+    </p>
+  </div>
+
+  <blockquote>
+    «Надежная система — это та, которая полностью принадлежит своему владельцу и сохраняет работоспособность без внешних облаков».
+  </blockquote>
+
+  <div class="thesis-block">
+    <h2>2. Опыт КМКВК: путь одиночки</h2>
+    <p>
+      Пребывание в закрытом кадетском корпусе было жестким опытом изоляции, где ты был один и учился рассчитывать только на себя. Это сформировало внутреннюю выдержку и главное инженерное убеждение: система должна быть самодостаточной и не зависеть от внешних факторов.
+    </p>
+  </div>
+
+  <div class="thesis-block">
+    <h2>3. Санкт-Петербург и Капан</h2>
+    <p>
+      Научно-аналитическая основа сформирована в Санкт-Петербурге, а компания M.A.R.S. COMPANION LLC официально учреждена и ведет разработку в городе Капан (Сюник, Армения).
+    </p>
+  </div>
+
+  <div class="profile-card">
+    <h3>Идентификация</h3>
+    <p>
+      Александр Саркисян &bull; <a href="https://www.wikidata.org/wiki/Q141447666" target="_blank" rel="noopener" class="text-link">Wikidata ID: Q141447666</a> &bull; <a href="https://sarkisian.site" target="_blank" rel="noopener" class="text-link">sarkisian.site</a> &bull; <a href="https://share.google/gPuOlx5vJrZOOmTbw" target="_blank" rel="noopener" class="text-link">Карточка Google</a>
+    </p>
+  </div>
+
+  <footer>
+    © 2026 Александр Саркисян &bull; Первоисточник: <a href="https://sarkisian.site" target="_blank" rel="noopener" class="text-link">sarkisian.site</a> &bull; <a href="https://александр.pp.ua" class="text-link" rel="canonical">александр.pp.ua</a>
+  </footer>
+</div>
+
+</body>
+</html>
